@@ -10,7 +10,9 @@ import org.junit.runner.RunWith;
                 "src/test/resources/features/Rebrandly.feature"
         },
         glue = {
-                "org.bulatAPI.steps.rebrandly"
+                "org.bulatAPI.steps.rebrandly",
+                "org.bulatAPI.steps.shared"
+
         },
         tags = {
 

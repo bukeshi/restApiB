@@ -51,11 +51,7 @@ public class RebrandlySteps {
         sharedData.response = rs.get("/v1/links");
     }
 
-    @Then("^status code is (\\d+)$")
-    public void status_code_is(int expectedStatusCode)  {
-        LOGGER.debug("Status code returned is "+ sharedData.response.getStatusCode());
-        MatcherAssert.assertThat(sharedData.response.getStatusCode(), Matchers.is(expectedStatusCode));
-    }
+
 
 
     @When("^all links are requested with following query params$")
@@ -138,6 +134,5 @@ public class RebrandlySteps {
         rs.accept(ContentType.JSON);
         return rs;
     }
-
 
 }
