@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- configuration status = info is for internal log4j processes, keep it on info-->
+<Configuration status="info">
+
+    <Appenders>
+
+        <Console name="Console" target="SYSTEM_OUT">
+<!--    <PatternLayout pattern="${layout}" />-->
+            <PatternLayout pattern = "[%level] %d{HH:mm:ss.SSS} - %msg [%class] %l%n"/>
+        </Console>
+<!--        File tag is responsible for creating a tag-->
+        <File name = "restApiB" filename = "logs/restApiB_log_${date:yyyy-MM-dd}.log" append ="true">
+<!--    change append to true if you want to save every log in the same file, if you switch it to false log4j will
+create a new file for every time you run you program-->
+            <PatternLayout pattern="[%level] %d{HH:mm:ss.SSS} -  %msg [%class] %l%n"/>
+        </File>
+
+    </Appenders>
+<!--define logger here-->
+    <Loggers>
+<!-- root level = debug will show your logs, remember the waterfall levels -->
+        <Root level="info">
+            <AppenderRef ref="Console" />
+<!--       AppenderRef ref - name will make sure everything is logged in the file, without it log file will be empty     -->
+            <AppenderRef ref ="restApiB"/>
+        </Root>
+
+    </Loggers>
+</Configuration>

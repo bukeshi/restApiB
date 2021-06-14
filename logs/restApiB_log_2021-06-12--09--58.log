@@ -1,0 +1,3 @@
+[INFO] 09:58:05.344 -  Received request to calculate tax [TempPolindrome] TempPolindrome.calculateTax(TempPolindrome.java:28)
+[INFO] 09:58:05.354 -  Person's salary is -120000.0 , marital status is true [TempPolindrome] TempPolindrome.calculateTax(TempPolindrome.java:29)
+[ERROR] 09:58:05.354 -  salary can not be negative [TempPolindrome] TempPolindrome.calculateTax(TempPolindrome.java:38)

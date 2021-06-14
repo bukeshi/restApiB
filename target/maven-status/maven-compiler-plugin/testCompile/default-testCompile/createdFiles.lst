@@ -1,0 +1,8 @@
+org/bulatAPI/steps/common/CommonSteps.class
+org/bulatAPI/pojos/rebrandly/RebrandlyLink.class
+TempPolindrome.class
+org/bulatAPI/utils/ConfigReader.class
+org/bulatAPI/steps/common/CommonData.class
+org/bulatAPI/steps/rebrandly/RebrandlySteps.class
+org/bulatAPI/runners/RebrandlyRunner.class
+org/bulatAPI/pojos/rebrandly/Creator.class
